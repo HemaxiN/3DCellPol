@@ -5,7 +5,14 @@ This repository contains the Python implementation of CellPol for both 2D and 3D
 
 ## Important Note
 
-The implementation for 3D vector prediction will be incorporated into our recently proposed [3DVascNet's](https://github.com/HemaxiN/3DVascNet/wiki) graphical user interface. 
+* The implementation for 3D vector prediction will be incorporated into our recently proposed [3DVascNet's](https://github.com/HemaxiN/3DVascNet/wiki) graphical user interface.
+* The instructions below are for the **3D implementation** provided in the `3D` folder. If you are using the **2D implementation** in the `2D` folder, the steps are almost identical. 
+
+For the 2D implementation, there are only two differences:
+1. **No need to specify the z-dimension**: You do not need to provide the patch dimensions along the z-direction.
+2. **No need to specify z-direction resolution**: The resolution along the z-direction is also not required.
+
+All other steps remain the same.
 
 ## How to cite
 
