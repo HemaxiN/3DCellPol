@@ -60,3 +60,6 @@ In these polar histograms:
 
 - The angular axis represents direction in degrees (0° to 360°).
 - The radial axis represents vector density, showing how frequently vectors are oriented in each direction.
+- Example of a polar histogram:
+
+![](https://github.com/HemaxiN/3DCellPol/blob/main/images/polar_histogram_example.png)
