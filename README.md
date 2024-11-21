@@ -51,7 +51,7 @@ Now it has been updated to work in Python 3.10, the required packages are listed
 
 # Polar/Angular Histograms
 
-CellPol outputs can be used to study the polarization and migration of cells. To help visualize this, we provide a script to visualize the angular histograms for the distribution of vectors orientation. Specifically:
+CellPol outputs can be used to study the polarization and migration of cells. To help visualize this, we provide a script to visualize the angular histograms for the distribution of vector orientations. Specifically:
 
 - 2D vectors: in the XY plane.
 - 3D vectors: in the XY, YZ, and XZ planes.
