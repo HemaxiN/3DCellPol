@@ -50,6 +50,8 @@ Now it has been updated to work in Python 3.10, the required packages are listed
 
 # Testing the Pre-Trained Model on Your Own Dataset
 
+You can test the pre-trained model, available [here](https://huggingface.co/Hemaxi/3DCellPol) in your dataset using the ```predict_main.py``` as described in the [Prediction section](#prediction).
+
 # Train on your own dataset
 
 # Prediction
