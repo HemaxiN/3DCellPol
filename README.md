@@ -28,6 +28,12 @@ All other steps remain the same.
 
 ## Overview of the Project
 
+Our approach predicts centroid heatmaps and embedding maps separately for nuclei and Golgi. Firstly, the centroids are obtained by extracting the local maximizers from the centroid heatmaps.  
+The embedding for each detected centroid is obtained by extracting the value, at the centroid's position, from the embedding heatmap, represented by vertical dashed grey arrows in the following figure.
+After that, pairing is based on the distance between a nucleus embedding and a Golgi embedding. Nuclei and Golgi with the closest embeddings are paired, as long as the distances between their centroids and between their embeddings are smaller than certain thresholds. 
+
+![](https://github.com/HemaxiN/3DCellPol/blob/main/images/overview.jpg)
+**Schematic representation of 3DCellPol** It receives an image with nuclei and Golgi as input, and outputs the centroid heatmaps and embedding maps of nuclei and Golgi. The centroids are decoded by extracting the local maxima from the centroid heatmaps. The corresponding embeddings are obtained from the embedding maps at the centroids' positions (vertical dashed grey arrows). A nucleus and a Golgi belonging to the same cell should have similar embeddings. Thus, the distances between the embeddings of nuclei and Golgi are used to compute the vectors.
 
 
 ## Datasets
