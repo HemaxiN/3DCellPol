@@ -35,7 +35,6 @@ All other steps remain the same.
 * Real Nucleus-Golgi Retinal Dataset (3D)
 * Cytoplasm-Nucleus Dataset (2D)
   This dataset was presented in [Cx22: A new publicly available dataset for deep learning-based segmentation of cervical cytology images](https://www.sciencedirect.com/science/article/pii/S0010482522009027) and it is available [here](https://github.com/LGQ330/Cx22).
-* Real Nucleus-Golgi Cells Dataset (2D)
 
 ## Requirements
 
