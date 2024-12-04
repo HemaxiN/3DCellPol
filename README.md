@@ -32,7 +32,7 @@ All other steps remain the same.
 
 ## Datasets
 
-* Real Nucleus-Golgi Retinal Dataset (3D)
+* Real Nucleus-Golgi Retinal Dataset (3D): microscopy subvolumes of mouse retinal nuclei and Golgi and corresponding subvolumes with centroid heatmaps and embedding maps required for training, it is available [here](https://huggingface.co/datasets/Hemaxi/3DCellPol).
 * Cytoplasm-Nucleus Dataset (2D)
   This dataset was presented in [Cx22: A new publicly available dataset for deep learning-based segmentation of cervical cytology images](https://www.sciencedirect.com/science/article/pii/S0010482522009027) and it is available [here](https://github.com/LGQ330/Cx22).
 
