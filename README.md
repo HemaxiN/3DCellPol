@@ -3,7 +3,7 @@ Official implementation of 3DCellPol an automated approach for joint detection a
 
 This repository contains the Python implementation of CellPol for both 2D and 3D images.
 
-## Important Note
+## Important Notes
 
 * The implementation for 3D vector prediction will be incorporated into our recently proposed [3DVascNet's](https://github.com/HemaxiN/3DVascNet/wiki) graphical user interface.
 * The instructions below are for the **3D implementation** provided in the `3D` folder. If you are using the **2D implementation** in the `2D` folder, the steps are almost identical. 
