@@ -76,6 +76,24 @@ data_dir
 
 # Prediction
 
+### 1. Predict the results for the validation subvolumes
+- Begin by updating the directory paths in the [predict_validation.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/optimization/predict_validation.py) file and run it.  
+- Repeat the process for the following files:
+  - [select_best_thresholds_golgi.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/optimization/select_best_thresholds_golgi.py)
+  - [select_best_thresholds_nuclei.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/optimization/select_best_thresholds_nuclei.py)
+
+### 2. Compute Optimal Thresholds
+- Run the following files, after updating the directory paths, to output the optimal thresholds for predictions based on the validation set:
+  - [roc_curve_golgi.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/optimization/roc_curve_golgi.py)
+  - [roc_curve_nuclei.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/optimization/roc_curve_nuclei.py)
+
+### 3. Run Predictions
+- Finally, update the directory paths and the computed threshold values in the [predict_main.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/optimization/predict_main.py) file and run it to test the model.
+
+# Evaluate
+
+Update the diretory paths in [evaluation_main.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/evaluation_main.py).
+
 # Polar/Angular Histograms
 
 CellPol outputs can be used to study the polarization and migration of cells. To help visualize this, we provide a script to visualize the angular histograms for the distribution of vector orientations. Specifically:
@@ -90,3 +108,5 @@ In these polar histograms:
 - Example of a polar histogram:
 
 ![](https://github.com/HemaxiN/3DCellPol/blob/main/images/polar_histogram_example.png)
+
+To visualize these plots, update the directory paths and select the plane (xy, yz, or zx) by updating variable `plane_` in [angular_histograms.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/angular_histograms.py) file and run it.
