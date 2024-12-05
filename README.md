@@ -66,11 +66,11 @@ Then, run the file [train_main.py](https://github.com/HemaxiN/3DCellPol/blob/mai
 data_dir
     ├──  train
     |   ├── images  0.npy, 1.npy, ..., N.npy (sub-volumes of microscopy images of vessels  (X_dim, Y_dim, Z_slices, 2))
-    |   ├── vectors 0_nuclei.npy, 0_golgi.npy, 1_nuclei.npy, 1_golgi.npy, ..., N_nuclei.npy, N_golgi.npy  (arrays with the positions of the nuclei centroids and the centroids of the corresponding Golgi centroids)
+    |   ├── vectors 0nuclei.npy, 0golgi.npy, 1nuclei.npy, 1golgi.npy, ..., Nnuclei.npy, Ngolgi.npy  (arrays with the positions of the nuclei centroids and the centroids of the corresponding Golgi centroids)
     |   └── outputs   0.npy, 1.npy, ..., N.npy (sub-volumes of Gaussian heatmaps and embedding maps  (X_dim, Y_dim, Z_slices, 4))
     └──  val
         ├── images  0.npy, 1.npy, ..., M.npy (sub-volumes of microscopy images of vessels  (X_dim, Y_dim, Z_slices, 2))
-        ├── vectors 0_nuclei.npy, 0_golgi.npy, 1_nuclei.npy, 1_golgi.npy, ..., M_nuclei.npy, M_golgi.npy  (arrays with the positions of the nuclei centroids and the centroids of the corresponding Golgi centroids)
+        ├── vectors 0nuclei.npy, 0golgi.npy, 1nuclei.npy, 1golgi.npy, ..., Mnuclei.npy, Mgolgi.npy  (arrays with the positions of the nuclei centroids and the centroids of the corresponding Golgi centroids)
         └── outputs   0.npy, 1.npy, ..., M.npy (sub-volumes of Gaussian heatmaps and embedding maps  (X_dim, Y_dim, Z_slices, 4))
 ```
 
