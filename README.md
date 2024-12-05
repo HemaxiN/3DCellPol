@@ -58,8 +58,8 @@ You can test the pre-trained model, available [here](https://huggingface.co/Hema
 # Train on your own dataset
 
 To train the 3DCellPol model, you need images and corresponding 3D polarity vectors.
-The 3D nucleus-Golgi vectors can be annotated using our [Vector Annotation Tool](https://github.com/HemaxiN/VectorAnnotationTool).
-To create the training sub-volumes use the file [create_dataset_main.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/create_dataset_main.py).
+The 3D nucleus-Golgi vectors can be annotated using our [Vector Annotation Tool](https://github.com/HemaxiN/VectorAnnotationTool). This tool outputs a .csv files for each image containing the paired nuclei and Golgi centroids. 
+To create the training sub-volumes use the file [create_dataset_main.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/create_dataset_main.py). The `gt_dir` is the path to the folder containing the .csv files obtained with the [Vector Annotation Tool](https://github.com/HemaxiN/VectorAnnotationTool).
 Then, run the file [train_main.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/train_main.py) to create the ```train``` and ```val``` folders in ```data_dir```. The ```data_dir```has the following structure: 
 
 ```
