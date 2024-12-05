@@ -88,7 +88,7 @@ data_dir
   - [roc_curve_nuclei.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/optimization/roc_curve_nuclei.py)
 
 ### 3. Run Predictions
-- Finally, update the directory paths and the computed threshold values in the [predict_main.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/optimization/predict_main.py) file and run it to test the model.
+- Finally, update the directory paths and the computed threshold values in the [predict_main.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/predict_main.py) file and run it to test the model.
 
 # Evaluate
 
