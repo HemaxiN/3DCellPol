@@ -54,6 +54,8 @@ You can test the pre-trained model, available [here](https://huggingface.co/Hema
 
 # Train on your own dataset
 
+The 3D nucleus-Golgi vectors can be annotated using our [Vector Annotation Tool](https://github.com/HemaxiN/VectorAnnotationTool).
+
 # Prediction
 
 # Polar/Angular Histograms
