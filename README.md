@@ -3,7 +3,10 @@ Official implementation of 3DCellPol, an automated approach for joint detection 
 
 This repository contains the Python implementation of CellPol for both 2D and 3D images.
 
+
 ## Important Notes
+
+* *Important*: We welcome collaborations to expand the dataset for 3DCellPol training and evaluation. Feel free to contact me hemaxi[dot]narotamo[at]tecnico.ulisboa.pt
 
 * The implementation for 3D vector prediction will be incorporated into our recently proposed [3DVascNet's](https://github.com/HemaxiN/3DVascNet/wiki) graphical user interface.
 * The instructions below are for the **3D implementation** provided in the `3D` folder. If you are using the **2D implementation** in the `2D` folder, the steps are almost identical. 
@@ -50,11 +53,26 @@ Now it has been updated to work in Python 3.10, the required packages are listed
 
 # Testing the Pre-Trained Model on Your Own Dataset
 
-You can test the pre-trained model, available [here](https://huggingface.co/Hemaxi/3DCellPol) in your dataset using the ```predict_main.py``` as described in the [Prediction section](#prediction).
+You can test the pre-trained model, available [here](https://huggingface.co/Hemaxi/3DCellPol) in your dataset using the ```predict_main.py``` as described in the [Prediction section](#prediction). If the pre-trained model does not work well on your images, you can train the 3DCellPol model using your dataset.
 
 # Train on your own dataset
 
+To train the 3DCellPol model, you need images and corresponding 3D polarity vectors.
 The 3D nucleus-Golgi vectors can be annotated using our [Vector Annotation Tool](https://github.com/HemaxiN/VectorAnnotationTool).
+To create the training sub-volumes use the file [create_dataset_main.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/create_dataset_main.py).
+Then, run the file [train_main.py](https://github.com/HemaxiN/3DCellPol/blob/main/3D/train_main.py) to create the ```train``` and ```val``` folders in ```data_dir```. The ```data_dir```has the following structure: 
+
+```
+data_dir
+    ├──  train
+    |   ├── images  0.npy, 1.npy, ..., N.npy (sub-volumes of microscopy images of vessels  (X_dim, Y_dim, Z_slices, 2))
+    |   ├── vectors 0_nuclei.npy, 0_golgi.npy, 1_nuclei.npy, 1_golgi.npy, ..., N_nuclei.npy, N_golgi.npy  (arrays with the positions of the nuclei centroids and the centroids of the corresponding Golgi centroids)
+    |   └── outputs   0.npy, 1.npy, ..., N.npy (sub-volumes of Gaussian heatmaps and embedding maps  (X_dim, Y_dim, Z_slices, 4))
+    └──  val
+        ├── images  0.npy, 1.npy, ..., M.npy (sub-volumes of microscopy images of vessels  (X_dim, Y_dim, Z_slices, 2))
+        ├── vectors 0_nuclei.npy, 0_golgi.npy, 1_nuclei.npy, 1_golgi.npy, ..., M_nuclei.npy, M_golgi.npy  (arrays with the positions of the nuclei centroids and the centroids of the corresponding Golgi centroids)
+        └── outputs   0.npy, 1.npy, ..., M.npy (sub-volumes of Gaussian heatmaps and embedding maps  (X_dim, Y_dim, Z_slices, 4))
+```
 
 # Prediction
 
