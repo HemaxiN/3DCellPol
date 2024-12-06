@@ -18,18 +18,3 @@ def cutoff_youdens_j(fpr,tpr,thresholds):
     return j_ordered[-1][1]
 
 print('threshold best: {}'.format(cutoff_youdens_j(fpr_values, tpr_values, thresholds)))
-
-
-# Calculate Youden's J-Statistic for each threshold
-j_statistic = [tpr - fpr for tpr, fpr in zip(tpr_values, fpr_values)]
-
-# Find the index of the threshold with the highest J-Statistic
-best_threshold_index = np.argmax(j_statistic)
-
-# Retrieve the best threshold
-best_threshold = thresholds[best_threshold_index]
-
-# Print the best threshold and corresponding TPR and FPR
-print("Best Threshold:", best_threshold)
-print("Corresponding TPR:", tpr_values[best_threshold_index])
-print("Corresponding FPR:", fpr_values[best_threshold_index])
