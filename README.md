@@ -51,9 +51,9 @@ The code was initially developed in Python 3.5.2, using Keras 2.2.4.
 
 Now it has been updated to work in Python 3.10, the required packages are listed in [requirements.txt](https://github.com/HemaxiN/3DCellPol/blob/main/requirements.txt).
 
-# Testing the Pre-Trained Model on Your Own Dataset
+[//]: # (# Testing the Pre-Trained Model on Your Own Dataset)
 
-You can test the pre-trained model, available [here](https://huggingface.co/Hemaxi/3DCellPol) in your dataset using the ```predict_main.py``` as described in the [Prediction section](#prediction). If the pre-trained model does not work well on your images, you can train the 3DCellPol model using your dataset.
+[//]: # (You can test the pre-trained model, available [here](https://huggingface.co/Hemaxi/3DCellPol) in your dataset using the ```predict_main.py``` as described in the [Prediction section](#prediction). If the pre-trained model does not work well on your images, you can train the 3DCellPol model using your dataset.)
 
 # Train on your own dataset
 
