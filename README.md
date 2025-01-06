@@ -8,7 +8,7 @@ This repository contains the Python implementation of CellPol for both 2D and 3D
 
 * **Important**: We welcome collaborations to expand the dataset for 3DCellPol training and evaluation. Feel free to contact me hemaxi[dot]narotamo[at]tecnico.ulisboa.pt
 
-* The implementation for 3D vector prediction will be incorporated into our recently proposed [3DVascNet's](https://github.com/HemaxiN/3DVascNet/wiki) graphical user interface.
+* The implementation for 3D vector prediction will be incorporated into our recently proposed [3DVascNet's](https://github.com/HemaxiN/3DVascNet/wiki) graphical user interface. More information is available in this [repository](https://github.com/HemaxiN/3DArtificialVision).
 * The instructions below are for the **3D implementation** provided in the `3D` folder. If you are using the **2D implementation** in the `2D` folder, the steps are almost identical. 
 
 For the 2D implementation, there are only two differences:
