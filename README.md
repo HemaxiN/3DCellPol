@@ -6,8 +6,7 @@ This repository contains the Python implementation of CellPol for both 2D and 3D
 ## How to cite
 
 ```bibtex
-@article{,
-  title={3DCellPol: Joint detection and pairing of cell structures to compute cell polarity},
+@article{title={3DCellPol: Joint detection and pairing of cell structures to compute cell polarity},
   author={Narotamo, Hemaxi and Franco, Cl{\'a}udio A and Silveira, Margarida},
   journal={Biomedical Signal Processing and Control},
   year={2025},
