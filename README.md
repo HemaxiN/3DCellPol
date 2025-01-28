@@ -3,6 +3,19 @@ Official implementation of 3DCellPol, an automated approach for joint detection 
 
 This repository contains the Python implementation of CellPol for both 2D and 3D images.
 
+## How to cite
+
+```bibtex
+@article{,
+  title={3DCellPol: Joint detection and pairing of cell structures to compute cell polarity},
+  author={Narotamo, Hemaxi and Franco, Cl{\'a}udio A and Silveira, Margarida},
+  journal={Biomedical Signal Processing and Control},
+  year={2025},
+  volume={104},
+  pages={107537},
+  publisher={Elsevier}
+}
+```
 
 ## Important Notes
 
@@ -17,19 +30,7 @@ For the 2D implementation, there are only two differences:
 
 All other steps remain the same.
 
-## How to cite
 
-```bibtex
-@article{,
-  title={3DCellPol: Joint detection and pairing of cell structures to compute cell polarity},
-  author={Narotamo, Hemaxi and Franco, Cl{\'a}udio A and Silveira, Margarida},
-  journal={Biomedical Signal Processing and Control},
-  year={2025},
-  volume={104},
-  pages={107537},
-  publisher={Elsevier}
-}
-```
 
 ## Overview of the Project
 
