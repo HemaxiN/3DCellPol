@@ -23,7 +23,7 @@ You can try our model directly in the browser using the Hugging Face Space:
 
 👉 [3DCellPol](https://huggingface.co/spaces/Hemaxi/3DCellPol)
 
-Simply upload a 3D image, segment it, and explore the results interactively!
+Simply upload a 3D image, compute the vectors, and explore the results interactively!
 
 ## Important Notes
 
