@@ -17,6 +17,14 @@ This repository contains the Python implementation of CellPol for both 2D and 3D
 }
 ```
 
+### Try Our Model on Hugging Face
+
+You can try our model directly in the browser using the Hugging Face Space:
+
+👉 [3DCellPol](https://huggingface.co/spaces/Hemaxi/3DCellPol)
+
+Simply upload a 3D image, segment it, and explore the results interactively!
+
 ## Important Notes
 
 * **Important**: We welcome collaborations to expand the dataset for 3DCellPol training and evaluation. Feel free to contact me hemaxi[dot]narotamo[at]tecnico.ulisboa.pt
